@@ -1,4 +1,3 @@
-<!-- Groomershop/CategoryH1/view/adminhtml/ui_component/category_form.xml -->
 <?xml version="1.0"?>
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <fieldset name="search_engine_optimization">
