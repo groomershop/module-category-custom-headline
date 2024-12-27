@@ -2,7 +2,7 @@
 
 // https://developer.adobe.com/commerce/frontend-core/ui-components/howto/add-category-attribute/
 
-namespace GroomerShop\CategoryH1\Setup;
+namespace GroomerShop\CategoryCustomHeadline\Setup;
 
 use Magento\Framework\Setup\{
     ModuleContextInterface,

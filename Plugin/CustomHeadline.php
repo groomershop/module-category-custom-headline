@@ -1,6 +1,6 @@
 <?php
 
-namespace Groomershop\CategoryCustomHeadline\Plugin;
+namespace GroomerShop\CategoryCustomHeadline\Plugin;
 
 use Magento\Framework\Registry;
 use Magento\Framework\App\Request\Http;

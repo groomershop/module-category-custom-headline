@@ -9,7 +9,7 @@
         "registration.php"
       ],
       "psr-4": {
-        "Groomershop\\CategoryCustomHeadline\\": ""
+        "GroomerShop\\CategoryCustomHeadline\\": ""
       }
     }
 }
