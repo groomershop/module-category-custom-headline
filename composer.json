@@ -1,6 +1,6 @@
 {
-    "name": "groomershop/module-category-h1",
-    "description": "Custom headline tags for category pages",
+    "name": "groomershop/module-category-custom-headline",
+    "description": "Custom headline tag for category page",
     "type": "magento2-module",
     "homepage": "https://groomershop.pl",
     "license": "OSL-3.0",
@@ -9,7 +9,7 @@
         "registration.php"
       ],
       "psr-4": {
-        "Groomershop\\CategoryH1\\": ""
+        "Groomershop\\CategoryCustomHeadline\\": ""
       }
     }
 }

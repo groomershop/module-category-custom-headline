@@ -1,6 +1,6 @@
 <?php
 
-namespace Groomershop\CategoryH1\Plugin;
+namespace Groomershop\CategoryCustomHeadline\Plugin;
 
 use Magento\Framework\Registry;
 use Magento\Framework\App\Request\Http;
@@ -33,7 +33,7 @@ class CustomHeadline
                 return $customHeadline;
             } else {
                 return $headline;
-	    }
+            }
         }
     }
 }
