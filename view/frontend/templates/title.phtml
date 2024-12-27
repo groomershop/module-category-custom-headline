@@ -1,0 +1,47 @@
+<?php
+/**
+ * Template overwritten to:
+ * - add custom H1 tag support
+ * Aligned with Magento 2.4.6 in 04/2024
+ */
+$catalogHelperData = $this->helper('Magento\Catalog\Helper\Data');
+$categoryObject = $catalogHelperData->getCategory();
+
+if ($categoryObject) {
+  $categoryCustomH1 = trim($categoryObject->getCustomH1());
+}
+
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * @var $block \Magento\Theme\Block\Html\Title
+ */
+$cssClass = $block->getCssClass() ? ' ' . $block->getCssClass() : '';
+$titleHtml = '';
+$pageHeading=trim($block->getPageHeading());
+if (isset($categoryCustomH1) && !empty($categoryCustomH1)) {
+  $pageHeading = $categoryCustomH1;
+}
+if ($pageHeading) {
+    $titleHtml = '<span class="base" data-ui-id="page-title-wrapper" '
+        . $block->getAddBaseAttribute()
+        . '>'
+        . $block->escapeHtml($pageHeading)
+        . '</span>';
+}
+?>
+<?php if ($titleHtml) : ?>
+<div class="page-title-wrapper<?= $block->escapeHtmlAttr($cssClass) ?>">
+    <h1 class="page-title"
+        <?php if ($block->getId()) : ?> id="<?= $block->escapeHtmlAttr($block->getId()) ?>" <?php endif; ?>
+        <?php if ($block->getAddBaseAttributeAria()) : ?>
+            aria-labelledby="<?= $block->escapeHtmlAttr($block->getAddBaseAttributeAria()) ?>"
+        <?php endif; ?>>
+        <?= /* @noEscape */ $titleHtml ?>
+    </h1>
+    <?= $block->getChildHtml() ?>
+</div>
+<?php endif; ?>
