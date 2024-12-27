@@ -1,0 +1,19 @@
+<!-- Groomershop/CategoryH1/view/adminhtml/ui_component/category_form.xml -->
+<?xml version="1.0"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="search_engine_optimization">
+        <field name="custom_h1" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">page</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Custom H1 tag</label>
+                <dataScope>custom_h1</dataScope>
+            </settings>
+        </field>
+    </fieldset>
+</form>
