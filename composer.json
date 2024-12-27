@@ -1,0 +1,15 @@
+{
+    "name": "groomershop/module-category H1",
+    "description": "Custom H1 tags for categoriy pages",
+    "type": "magento2-module",
+    "homepage": "https://groomershop.pl",
+    "license": "OSL-3.0",
+    "autoload": {
+      "files": [
+        "registration.php"
+      ],
+      "psr-4": {
+        "Groomershop\\CategoryH1\\": ""
+      }
+    }
+}
