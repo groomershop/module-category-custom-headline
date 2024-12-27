@@ -24,9 +24,18 @@ class InstallData implements InstallDataInterface
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
         $eavSetup = $this->eavSetupFactory->create(['setup' => $setup]);
-        $eavSetup->addAttribute(\Magento\Catalog\Model\Category::ENTITY, 'custom_h1', [
+        $eavSetup->addAttribute(\Magento\Catalog\Model\Category::ENTITY, 'custom_heading_one', [
             'type' => 'varchar',
             'label' => 'Custom H1 tag',
+            'input' => 'text',
+            'global' => 'store',
+            'group' => 'Search Engine Optimization',
+            'required' => false
+        ]);
+
+        $eavSetup->addAttribute(\Magento\Catalog\Model\Category::ENTITY, 'custom_heading_two', [
+            'type' => 'varchar',
+            'label' => 'Custom H2 tag',
             'input' => 'text',
             'global' => 'store',
             'group' => 'Search Engine Optimization',
