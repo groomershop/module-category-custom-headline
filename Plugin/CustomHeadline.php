@@ -17,7 +17,6 @@ class CustomHeadline
         Http $request
     ) {
         $this->coreRegistry = $coreRegistry;
-        $this->request = $request;
     }
 
     public function afterGetHeadline(\MageSuite\ThemeHelpers\Block\Category\View\Headline $subject, $headline)
